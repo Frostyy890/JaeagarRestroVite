@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--font-white);
+    padding: 20px;
+}
+
+
+.page-name {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.date {
+    color: var(--font-lighter);
+    font-size: 16px;
+}
+
+.top-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-input {
+    position: relative;
+    padding: 14px 30px;
+    background: var(--main-dark-bg);
+    border: 2px solid var(--main-dark-line);
+    border-radius: 8px;
+    color: var(--font-light);
+    font-size: var(--small-font);
+    outline: none
+}

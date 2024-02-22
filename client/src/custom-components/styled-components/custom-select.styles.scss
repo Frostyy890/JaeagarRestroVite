@@ -1,0 +1,55 @@
+.custom-selector {
+    position: relative;
+    max-width: 200px;
+    height: 45px;
+    text-align: center;
+    // background: var(--main-dark-bg2)
+    .options-list {
+        cursor: pointer;
+        position: absolute;
+        display: none;
+        list-style: none;
+        background: var(--main-dark-bg2);
+        width: 100%;
+        border-top: none;
+        text-align: center;
+        line-height: 30px;
+        max-height: 120px;
+        overflow-y: auto;
+        z-index: 99;
+        
+        .selected {
+            display: none;
+        }
+
+        li{
+            padding: 0 14px;
+            &:hover {
+                background: var(--main-dark-line);
+        }
+
+    }
+    }
+
+
+    .open {
+        display: block;
+    }
+}
+
+.selector-header {
+    display: flex;
+    background: var(--main-dark-bg2);
+    max-width: 200px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    gap: 5px;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid var(--main-dark-line);
+    cursor: pointer;
+}
+

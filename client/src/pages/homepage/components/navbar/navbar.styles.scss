@@ -1,0 +1,41 @@
+#navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--font-white);
+    cursor: pointer;
+}
+
+
+.nav-list {
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-container {
+    border-bottom: 3px solid var(--main-dark-line);
+    padding-left: 20px;
+}
+
+.nav-item {
+    line-height: 20px;
+    position: relative;    
+}
+
+.nav-active {
+    color: var(--main-light);
+        transition: .4s;
+        &::after  {
+            content: '';
+            left: 0;
+            bottom: -2px;
+            position: absolute;
+            width: 60%;
+            height: 2px;
+            background: var(--main-light);
+        }
+}
